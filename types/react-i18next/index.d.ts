@@ -7,7 +7,7 @@ import { resources } from '#src/i18n/config';
 
 declare module 'react-i18next' {
   // and extend them!
-  type DefaultResources = typeof resources['en-US'];
+  type DefaultResources = (typeof resources)['en-US'];
   // eslint-disable-next-line
   interface Resources extends DefaultResources {}
 }
